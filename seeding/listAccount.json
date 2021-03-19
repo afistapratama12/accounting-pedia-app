@@ -1,0 +1,1387 @@
+[
+    {
+        "AccNumber" : 11101,
+        "AccName" : "Kas",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "KAS & BANK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    }, 
+    {
+        "AccNumber" : 11102,
+        "AccName" : "Rekening Bank",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "KAS & BANK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11103,
+        "AccName" : "Giro",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "KAS & BANK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+
+
+    {
+        "AccNumber" : 11201,
+        "AccName" : "Piutang Usaha",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "PIUTANG",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11202,
+        "AccName" : "Piutang Belum Ditagih",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "PIUTANG",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11203,
+        "AccName" : "Cadangan Kerugian Piutang",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "PIUTANG",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+
+
+
+
+    {
+        "AccNumber" : 11301,
+        "AccName" : "Persediaan Barang",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "PERSEDIAAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+
+
+
+
+    {
+        "AccNumber" : 11401,
+        "AccName" : "Piutang Lainnya",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11402,
+        "AccName" : "Piutang Karyawan",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11403,
+        "AccName" : "Dana Belum Disetor",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11404,
+        "AccName" : "Aset Lancar Lainnya",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11405,
+        "AccName" : "Biaya Dibayar Dimuka",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11406,
+        "AccName" : "Uang Muka",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11407,
+        "AccName" : "PPN Masukan",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+    {
+        "AccNumber" : 11408,
+        "AccName" : "Pajak Dibayar Dimuka",
+        "Head" : "ASET",
+        "Category" : "ASET LANCAR",
+        "subCategory" : "ASET LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"  
+    },
+
+
+
+
+    {
+        "AccNumber" : 12101,
+        "AccName" : "Aset Tetap - Tanah",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12102,
+        "AccName" : "Aset Tetap - Bangunan",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12103,
+        "AccName" : "Aset Tetap - Building Improvements",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12104,
+        "AccName" : "Aset Tetap - Kendaraan",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12105,
+        "AccName" : "Aset Tetap - Mesin & Peralatan",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12106,
+        "AccName" : "Aset Tetap - Peralatan Kantor",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12107,
+        "AccName" : "Aset Tetap - Aset Sewa Guna Usaha",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+    {
+        "AccNumber" : 12201,
+        "AccName" : "Akumulasi Penyusutan - Bangunan",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "PENYUSUTAN ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12202,
+        "AccName" : "Akumulasi Penyusutan - Building Improvements",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "PENYUSUTAN ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12203,
+        "AccName" : "Akumulasi Penyusutan - Kendaraan",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "PENYUSUTAN ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12204,
+        "AccName" : "Akumulasi Penyusutan - Mesin & Peralatan",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "PENYUSUTAN ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12205,
+        "AccName" : "Akumulasi Penyusutan - Peralatan Kantor",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "PENYUSUTAN ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12206,
+        "AccName" : "Akumulasi Penyusutan - Aset Sewa Guna Usaha",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "PENYUSUTAN ASET TETAP",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+    {
+        "AccNumber" : 12301,
+        "AccName" : "Hak Merk Dagang",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TAK BERWUJUD",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12302,
+        "AccName" : "Hak Cipta",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TAK BERWUJUD",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 12303,
+        "AccName" : "Good Will",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "ASET TAK BERWUJUD",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+    {
+        "AccNumber" : 12401,
+        "AccName" : "Akumulasi Amortisasi - Hak Merk Dagang",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "AMORTISASI ASET TAK BERWUJUD",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12402,
+        "AccName" : "Akumulasi Amortisasi - Hak Cipta",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "AMORTISASI ASET TAK BERWUJUD",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 12403,
+        "AccName" : "Akumulasi Amortisasi - Good Will",
+        "Head" : "ASET",
+        "Category" : "ASET TETAP",
+        "subCategory" : "AMORTISASI ASET TAK BERWUJUD",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+
+    {
+        "AccNumber" : 13101,
+        "AccName" : "Investasi",
+        "Head" : "ASET",
+        "Category" : "ASET LAINNYA",
+        "subCategory" : "ASET LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 21101,
+        "AccName" : "Hutang Usaha",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21102,
+        "AccName" : "Hutang Belum Ditagih",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21103,
+        "AccName" : "Hutang Lain - Lain",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21104,
+        "AccName" : "Hutang Gaji",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21105,
+        "AccName" : "Hutang Dividen",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21106,
+        "AccName" : "Pendapatan Diterima Dimuka",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21107,
+        "AccName" : "Hutang Sarana Kantor",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21108,
+        "AccName" : "Bunga Terhutang",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21109,
+        "AccName" : "PPN Keluaran",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21110,
+        "AccName" : "Biaya Terhutang lainnya",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+    {
+        "AccNumber" : 21201,
+        "AccName" : "Hutang Bank",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG BANK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+
+    {
+        "AccNumber" : 21301,
+        "AccName" : "Hutang Pajak - PPh 21",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG PAJAK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21302,
+        "AccName" : "Hutang Pajak - PPh 22",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG PAJAK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21303,
+        "AccName" : "Hutang Pajak - PPh 23",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG PAJAK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21304,
+        "AccName" : "Hutang Pajak - PPh 29",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG PAJAK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21305,
+        "AccName" : "Hutang Pajak Lainnya",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG PAJAK",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 21401,
+        "AccName" : "Hutang Dari Pemegang Saham",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21402,
+        "AccName" : "Kewajiban Lancar Lainnya",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 21403,
+        "AccName" : "Kewajiban Manfaat Karyawan",
+        "Head" : "LIABILITAS",
+        "Category" : "HUTANG LANCAR",
+        "subCategory" : "HUTANG LANCAR LAINNYA",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 31101,
+        "AccName" : "Modal Saham",
+        "Head" : "EKUITAS",
+        "Category" : "EKUITAS",
+        "subCategory" : "EKUITAS",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 31102,
+        "AccName" : "Tambaham Modal Disetor",
+        "Head" : "EKUITAS",
+        "Category" : "EKUITAS",
+        "subCategory" : "EKUITAS",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 31103,
+        "AccName" : "Laba Ditahan",
+        "Head" : "EKUITAS",
+        "Category" : "EKUITAS",
+        "subCategory" : "EKUITAS",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 31104,
+        "AccName" : "Dividen",
+        "Head" : "EKUITAS",
+        "Category" : "EKUITAS",
+        "subCategory" : "EKUITAS",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 31105,
+        "AccName" : "Pendapatan Konprehensif Lain",
+        "Head" : "EKUITAS",
+        "Category" : "EKUITAS",
+        "subCategory" : "EKUITAS",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 31106,
+        "AccName" : "Ekuitas Saldo Awal",
+        "Head" : "EKUITAS",
+        "Category" : "EKUITAS",
+        "subCategory" : "EKUITAS",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 41101,
+        "AccName" : "Pendapatan Jasa",
+        "Head" : "PENDAPATAN",
+        "Category" : "PENDAPATAN",
+        "subCategory" : "PENDAPATAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 41102,
+        "AccName" : "Diskon Penjualan",
+        "Head" : "PENDAPATAN",
+        "Category" : "PENDAPATAN",
+        "subCategory" : "PENDAPATAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 41103,
+        "AccName" : "Retur Penjualan",
+        "Head" : "PENDAPATAN",
+        "Category" : "PENDAPATAN",
+        "subCategory" : "PENDAPATAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 51101,
+        "AccName" : "Beban Pokok Pendapatan",
+        "Head" : "HARGA POKOK PENJUALAN",
+        "Category" : "HARGA POKOK PENJUALAN",
+        "subCategory" : "HARGA POKOK PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 51102,
+        "AccName" : "Diskon Pembelian",
+        "Head" : "HARGA POKOK PENJUALAN",
+        "Category" : "HARGA POKOK PENJUALAN",
+        "subCategory" : "HARGA POKOK PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 51103,
+        "AccName" : "Retur Pembelian",
+        "Head" : "HARGA POKOK PENJUALAN",
+        "Category" : "HARGA POKOK PENJUALAN",
+        "subCategory" : "HARGA POKOK PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 51104,
+        "AccName" : "Pengiriman & Angkut",
+        "Head" : "HARGA POKOK PENJUALAN",
+        "Category" : "HARGA POKOK PENJUALAN",
+        "subCategory" : "HARGA POKOK PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 51105,
+        "AccName" : "Biaya Impor",
+        "Head" : "HARGA POKOK PENJUALAN",
+        "Category" : "HARGA POKOK PENJUALAN",
+        "subCategory" : "HARGA POKOK PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 51106,
+        "AccName" : "Biaya Produksi",
+        "Head" : "HARGA POKOK PENJUALAN",
+        "Category" : "HARGA POKOK PENJUALAN",
+        "subCategory" : "HARGA POKOK PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 61101,
+        "AccName" : "Beban Iklan & Promosi",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN OPERASIONAL PENJUALAN",
+        "subCategory" : "BEBAN OPERASIONAL PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 61102,
+        "AccName" : "Beban Komisi & Fee",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN OPERASIONAL PENJUALAN",
+        "subCategory" : "BEBAN OPERASIONAL PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 61103,
+        "AccName" : "Beban Bensin, Tol & Parkir - Penjualan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN OPERASIONAL PENJUALAN",
+        "subCategory" : "BEBAN OPERASIONAL PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 61104,
+        "AccName" : "Beban Perjalanan Dinas",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN OPERASIONAL PENJUALAN",
+        "subCategory" : "BEBAN OPERASIONAL PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 61105,
+        "AccName" : "Beban Komunikasi",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN OPERASIONAL PENJUALAN",
+        "subCategory" : "BEBAN OPERASIONAL PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 61106,
+        "AccName" : "Beban Marketing Lainnya",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN OPERASIONAL PENJUALAN",
+        "subCategory" : "BEBAN OPERASIONAL PENJUALAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+    {
+        "AccNumber" : 62101,
+        "AccName" : "Beban Gaji",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62102,
+        "AccName" : "Beban Upah",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62103,
+        "AccName" : "Beban Makanan & Transportasi",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62104,
+        "AccName" : "Beban Lembur",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62105,
+        "AccName" : "Beban Pengobatan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62106,
+        "AccName" : "Beban THR & Bonur",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62107,
+        "AccName" : "Beban Jamsostek",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62108,
+        "AccName" : "Beban Insentif",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62109,
+        "AccName" : "Beban Pesangon",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62110,
+        "AccName" : "Beban Manfaat & Tunjangan Lainnya",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62111,
+        "AccName" : "Beban Donasi",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62112,
+        "AccName" : "Beban Hiburan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62113,
+        "AccName" : "Beban Bensin, Tol & Parkir - Umum",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62114,
+        "AccName" : "Beban Perbaikan Pemeliharaan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62115,
+        "AccName" : "Beban Makanan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62116,
+        "AccName" : "Beban Iuran & Langganan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62117,
+        "AccName" : "Beban Asuransi",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62118,
+        "AccName" : "Beban Legal",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62119,
+        "AccName" : "Beban Piutang Tak Tertagih",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62120,
+        "AccName" : "Beban Langganan Software & Program",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62121,
+        "AccName" : "Beban Listrik, Air & Telepon",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62122,
+        "AccName" : "Beban Administrasi & Umum Lainnya",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN ADMINISTRASI & UMUM",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+
+    {
+        "AccNumber" : 62201,
+        "AccName" : "Beban Penyusutan Bangunan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN PENYUSUTAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62202,
+        "AccName" : "Beban Penyusutan Building Improvement",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN PENYUSUTAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62203,
+        "AccName" : "Beban Penyusutan Kendaraan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN PENYUSUTAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62204,
+        "AccName" : "Beban Penyusutan Mesin & Peralatan",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN PENYUSUTAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62205,
+        "AccName" : "Beban Penyusutan Peralatan Kantor",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN PENYUSUTAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62206,
+        "AccName" : "Beban Penyusutan Aset Sewa Guna",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN PENYUSUTAN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+    {
+        "AccNumber" : 62301,
+        "AccName" : "Beban Amortisasi Hak Merk Dagang",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN AMORTISASI",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62302,
+        "AccName" : "Beban Amortisasi Hak Cipta",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN AMORTISASI",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 62303,
+        "AccName" : "Beban Amortisasi Good Will",
+        "Head" : "BEBAN",
+        "Category" : "BEBAN ADMINISTRASI & UMUM",
+        "subCategory" : "BEBAN AMORTISASI",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+
+
+
+
+
+
+    {
+        "AccNumber" : 71101,
+        "AccName" : "Pendapatan Bunga Bank",
+        "Head" : "PENDAPATAN LAIN",
+        "Category" : "PENDAPATAN LAIN",
+        "subCategory" : "PENDAPATAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 71102,
+        "AccName" : "Pendapatan Bunga Deposito",
+        "Head" : "PENDAPATAN LAIN",
+        "Category" : "PENDAPATAN LAIN",
+        "subCategory" : "PENDAPATAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 71103,
+        "AccName" : "Pembulatan",
+        "Head" : "PENDAPATAN LAIN",
+        "Category" : "PENDAPATAN LAIN",
+        "subCategory" : "PENDAPATAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+    {
+        "AccNumber" : 71104,
+        "AccName" : "Pendapatan Lain - Lain",
+        "Head" : "PENDAPATAN LAIN",
+        "Category" : "PENDAPATAN LAIN",
+        "subCategory" : "PENDAPATAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "K"
+    },
+
+
+
+
+
+    {
+        "AccNumber" : 81101,
+        "AccName" : "Beban Bunga",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 81102,
+        "AccName" : "Beban Provisi",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 81103,
+        "AccName" : "Laba / Rugi Pelepasan Aset Tetap",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 81104,
+        "AccName" : "Penyesuaian Persediaan",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 81105,
+        "AccName" : "Beban Lain - Lain",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 81106,
+        "AccName" : "Beban Pajak Kini",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    },
+    {
+        "AccNumber" : 81107,
+        "AccName" : "Beban Pajak Tangguhan",
+        "Head" : "BEBAN LAIN",
+        "Category" : "BEBAN LAIN",
+        "subCategory" : "BEBAN LAIN",
+        "saldo" : 0,
+        "debet" : 0,
+        "kredit" : 0,
+        "position" : "D"
+    }
+]
