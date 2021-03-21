@@ -135,7 +135,7 @@ class UserController {
         
             if(response.result.n) {
                 res.status(200).json({
-                    messages : 'user success delete'
+                    messages : `user ${req.params.userId} success delete`
                 })
             } else {
                 next({ name : 'not found'})

@@ -3,3 +3,7 @@ account.md
 sandbox.html
 sandbox.js
 .env
+dotenv
+.dotenv
+
+changeTrans.js

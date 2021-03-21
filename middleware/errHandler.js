@@ -15,7 +15,7 @@ function errorHandler (error, req, res, next) {
             res.status(404).json({ messages : 'Error not found'})
             break
         case 'error insert data':
-            res.status(400).json({ messages : 'error insert data'})
+            res.status(400).json({ messages : 'error insert format data'})
             break
         case 'error update':
             res.status(400).json({ messages : 'error update data'})

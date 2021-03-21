@@ -7,12 +7,14 @@ const { authenticate } = require('../middleware/auth')
 router.get('/', AkunController.findAll)
 
 router.get('/companies/:companyId',authenticate, AkunController.findAllByCompanyUser)
-router.get('/:akunId', AkunController.findById)
+router.get('/:akunId/companies/:companyId', AkunController.findById)
 
-router.post('/', authenticate, AkunController.createCompany)
+router.post('/companies/:companyId', authenticate, AkunController.createAkun)
 
-router.patch('/:akunId', authenticate, AkunController.updateCompany)
+router.patch('/:akunId', authenticate, AkunController.updateAkun) // belom dites
 
-router.delete('/:akunId', authenticate, AkunController.deleteCompany)
+router.delete('/:akunId', authenticate, AkunController.deleteAkun) // belom dites
+
+router.delete("/manual/:manual", authenticate, AkunController.deleteManual)
 
 module.exports = router

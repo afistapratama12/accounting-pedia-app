@@ -7,8 +7,6 @@ class CompanyController {
         try {
             const response = await Company.findAll()
 
-            // console.log(response)
-
             res.status(200).json(response)
 
         } catch (error) {
@@ -19,8 +17,6 @@ class CompanyController {
     static async findAllByUser(req, res, next) {
         try {
             const response = await Company.findByUserId(req.userId)
-
-            // console.log(response)
 
             res.status(200).json(response)
 
@@ -43,6 +39,21 @@ class CompanyController {
         }
     }
 
+
+    static async checkManyCompanyUser(req, res, next) {
+        try {
+            const response = await Company.findByUserId(req.userId)
+            if(response.length >= 3) {
+                res.status(401).json({
+                    error : "create company has reach the maximum limit"
+                })
+            } else {
+                next()
+            }
+        } catch (error) {
+            next(error)
+        }
+    }
 
     static async createCompany(req, res , next) {
         const newCompany = {
@@ -118,16 +129,36 @@ class CompanyController {
         }
     }
 
-    static async deleteCompany(req, res, next) {
+
+    static async automaticDeleteAkuns(req, res, next) {
         try {
-            const response = await Company.delete(req.params.companyId)
-        
+            const response = await Akun.deleteAccountByCompany(req.params.companyId)
+
             if(response.result.n) {
-                res.status(200).json({
-                    messages : 'user success delete'
+                next({
+                    deleteId : req.params.companyId,
+                    message : "account automatic delete"
                 })
             } else {
                 next({ name : 'not found'})
+            }
+        } catch (error) {
+            next(error)
+        }
+    }
+
+
+    static async deleteCompany(delAccount , req, res, next) {
+        try {
+            const response = await Company.delete(delAccount.deleteId)
+        
+            if(response.result.n) {
+                res.status(200).json({
+                    company : `Company ${delAccount.deleteId} success delete`,
+                    account : delAccount.message
+                })
+            } else {
+                next({ name : 'not found' })
             }
         
         

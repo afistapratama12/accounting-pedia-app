@@ -1,4 +1,6 @@
 const Akun = require('../models/Akun')
+const allTransactionAkun = require('../helper/allTransactionByAkun')
+const Transaction = require('../models/Transaction')
 
 class AkunController {
     static async findAll(req, res, next) {
@@ -21,7 +23,9 @@ class AkunController {
             const response = await Akun.findByCompanyUser(req.params.companyId)
 
             // console.log(response)
-
+            if(response.length == 0) {
+                next({ name : 'not found'})
+            }
             res.status(200).json(response)
 
         } catch (error) {
@@ -31,10 +35,17 @@ class AkunController {
 
     static async findById(req, res, next) {
         try {
-            const response = await Akun.findById(req.params.akunId)
+            const getAkun = await Akun.findById(req.params.akunId)
             
-            if(response) {
-                res.status(200).json(response)
+            const getTransaction = await Transaction.findAll(req.params.companyId)
+
+            if(getAkun) {
+                
+                console.log(getAkun, "get akun")
+                console.log(getTransaction, "get Transaction")
+
+                let getAllTrans = allTransactionAkun(getAkun, getTransaction)
+                res.status(200).json(getAllTrans)
             } else {
                 next({ name : 'not found'})
             }
@@ -44,24 +55,24 @@ class AkunController {
     }
 
 
-    static async createCompany(req, res , next) {
-        const newCompany = {
+    static async createAkun(req, res , next) {
+        const newAkun = {
             AccNumber : +req.body.accNumber,
             AccName : req.body.accName,
             Head : req.body.head,
             Category : req.body.category,
-            subCategory : +req.body.subCategory,
-            saldo : +req.body.saldo,
-            debet : +req.body.debet,
-            kredit : +req.body.kredit,
+            subCategory : req.body.subCategory,
+            saldo : 0,
+            debet : 0,
+            kredit : 0,
             position : req.body.position,
             UserId : req.userId,
-            CompanyId : req.body.companyId
+            CompanyId : req.params.companyId
         }
 
         try {
             
-            const response = await Company.create(newCompany)
+            const response = await Akun.create(newAkun)
 
             if(response.result.ok) {
                 res.status(201).json(response.ops[0])
@@ -75,22 +86,22 @@ class AkunController {
     }
 
 
-
-    static async updateCompany(req, res, next) {
+    // cuma bisa update nama Akun
+    static async updateAkun(req, res, next) {
         let correctData = {}
 
         for(const key in req.body) {
-            if (key == 'name' || key == 'address' || key ==  'noTelp') {
+            if (key == 'accName') {
                 correctData[key] = req.body[key]
             }
         }
 
         try {
             if (Object.keys(correctData).length == 0) {
-                next({ name : 'error update'})
+                next({ name : 'error update' })
             }
 
-            const response = await Company.updateData(req.params.companyId , correctData)
+            const response = await Akun.updateData(req.params.akunId , correctData)
 
             res.status(200).json({ _id : req.params.userId, ...response})
         } catch (error) {
@@ -98,13 +109,13 @@ class AkunController {
         }
     }
 
-    static async deleteCompany(req, res, next) {
+    static async deleteAkun(req, res, next) {
         try {
-            const response = await Company.delete(req.params.companyId)
+            const response = await Akun.delete(req.params.akunId)
         
             if(response.result.n) {
                 res.status(200).json({
-                    messages : 'user success delete'
+                    messages : `Akun ${req.params.akunId} success delete`
                 })
             } else {
                 next({ name : 'not found'})
@@ -114,6 +125,24 @@ class AkunController {
         } catch (error) {
             next(error)
         }
+    }
+
+
+    static async deleteManual (req, res, next) { 
+        try {
+            
+            const response = await Akun.manualDelete(req.params.manual)
+
+            if(response) {
+                console.log(response)
+                res.status(200).json({ messages : `delete akun by Head ${req.params.manual}`})
+            } else {
+                next( { name : "not found"})
+            }
+
+        } catch (error) {
+            next(error)
+        }   
     }
 }
 

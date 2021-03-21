@@ -4,7 +4,7 @@ const { getDatabase } = require('../config/mongodb')
 
 
 
-class Trancsation{
+class Transaction{
     
     static dbase() {
         return getDatabase().collection('transactions')
@@ -16,6 +16,20 @@ class Trancsation{
 
     static findById(id) {
         return this.dbase().findOne({ _id : ObjectID(id)})
+    }
+
+    static findByCompanyId(id) {
+        return this.dbase().find({
+            CompanyId : ObjectID(id),
+            CompanyId : id
+        }).toArray()
+    }
+
+    static findByAkunId(id) {
+        return this.dbase().find({
+            AkunId : ObjectID(id),
+            AkunId : id
+        }).toArray()
     }
 
     static create(user) {
@@ -34,6 +48,13 @@ class Trancsation{
         return this.dbase().deleteOne({ _id : ObjectID(id)})
     }
 
+    static automaticDeleteByCompanyId(id) {
+        return this.dbase().deleteMany({
+            CompanyId : ObjectID(id),
+            CompanyId : id
+        })
+    }
+
 }
 
-module.exports = Trancsation
+module.exports = Transaction

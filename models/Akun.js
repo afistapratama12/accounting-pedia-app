@@ -14,7 +14,10 @@ class Akun{
     }
 
     static findByCompanyUser(id) {
-        return this.dbase().find({CompanyId : id}).toArray()
+        return this.dbase().find({
+            CompanyId : id,
+            CompanyId : ObjectID(id)
+        }).toArray()
     }
 
     static findById(id) {
@@ -26,7 +29,6 @@ class Akun{
         return this.dbase().insert(insertData)
     }
 
-
     static create(user) {
         return this.dbase().insertOne(user)
     }
@@ -36,13 +38,26 @@ class Akun{
     }
 
     static updateData(id, data) {
-        return this.dbase().findOneAndUpdate({ _id : ObjectID(id)}, { $set : data})
+        return this.dbase().findOneAndUpdate({ 
+            _id : ObjectID(id)
+        }, { $set : data}
+        )
     }
 
     static delete(id) {
         return this.dbase().deleteOne({ _id : ObjectID(id)})
     }
 
+    static deleteAccountByCompany(id) {
+        return this.dbase().deleteMany({ 
+            CompanyId : ObjectID(id), 
+            CompanyId : id
+        })
+    }
+
+    static manualDelete(val) {
+        return this.dbase().deleteMany({ Head : val})
+    }
 }
 
 module.exports = Akun

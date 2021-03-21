@@ -1,10 +1,11 @@
-const Transactions = require('../models/Transaction')
+const Transaction = require('../models/Transaction')
 
 
+// diperbaiki dulu
 class TransactionController{
     static async findAll(req, res, next) {
         try {
-            const response = await Company.findAll()
+            const response = await Transaction.findAll()
 
             // console.log(response)
 
@@ -17,9 +18,11 @@ class TransactionController{
 
     static async findAllByCompanyUser(req, res, next) {
         try {
-            const response = await Company.findByUserId(req.companyId)
+            const response = await Transaction.findByCompanyId(req.params.companyId)
 
-            // console.log(response)
+            if(response.length == 0) {
+                next({ name : "not found"})
+            }
 
             res.status(200).json(response)
 
@@ -28,9 +31,26 @@ class TransactionController{
         }
     }
 
+    static async findAllByAkun(req, res, next) {
+        try {
+            const response = await Transaction.findByAkunId(req.params.akunId)
+
+            // console.log(response)
+            if(response.length == 0) {
+                next({ name : "not found"})
+            }
+            res.status(200).json(response)
+
+        } catch (error) {
+            next(error)       
+        }
+    }
+
+
+
     static async findById(req, res, next) {
         try {
-            const response = await Company.findById(req.params.companyId)
+            const response = await Transaction.findById(req.params.transactionId)
             
             if(response) {
                 res.status(200).json(response)
@@ -43,27 +63,39 @@ class TransactionController{
     }
 
 
-    static async createCompany(req, res , next) {
-        const newCompany = {
-            name : req.body.name,
-            address : req.body.address,
-            periodeAwal : req.body.periodeAwal,
-            periodeAkhir : req.body.periodeAkhir,
-            jenisUsaha : req.body.jenisUsaha,
-            noTelp : +req.body.noTelp,
-            UserId : req.userId
-        }
-
+    static async createTransaction(req, res , next) {
         try {
-            
-            const response = await Company.create(newCompany)
-
-            if(response.result.ok) {
-                res.status(201).json(response.ops[0])
-            } else {
-                next({ name : 'error insert data'})
+            const newTransaction = {
+                name : req.body.name,
+                noBukti : req.body.noBukti,
+                createdAt : req.body.createdAt,
+                documantation : req.body.documentation,
+                UserId : req.userId,
+                CompanyId : req.params.companyId,
+                mutations : req.body.mutations
             }
 
+            if(!Array.isArray(req.body.mutations) || !newTransaction.CompanyId || newTransaction.CompanyId.length < 5) {
+                next({ name : 'error insert data'})
+
+            } else {
+
+                // console.log(req.params.companyId, "get dari params")
+
+                // console.log(newTransaction.CompanyId, "get dari new transaction")
+
+                // res.status(200).json({
+                //     getparams : req.params.companyId
+                // })
+
+                const response = await Transaction.create(newTransaction)
+    
+                if(response.result.ok) {
+                    res.status(201).json(response.ops[0])
+                } else {
+                    next({ name : 'error insert data'})
+                }
+            }
         } catch (error) {
             next(error)
         }   
@@ -71,11 +103,11 @@ class TransactionController{
 
 
 
-    static async updateCompany(req, res, next) {
+    static async updateTransaction(req, res, next) {
         let correctData = {}
 
         for(const key in req.body) {
-            if (key == 'name' || key == 'address' || key ==  'noTelp') {
+            if (key == 'name' || key == "noBukti" || key == "documentation") {
                 correctData[key] = req.body[key]
             }
         }
@@ -85,26 +117,25 @@ class TransactionController{
                 next({ name : 'error update'})
             }
 
-            const response = await Company.updateData(req.params.companyId , correctData)
+            const response = await Transaction.updateData(req.params.transactionId , correctData)
 
-            res.status(200).json({ _id : req.params.userId, ...response})
+            res.status(200).json({ _id : req.params.transactionId, ...response})
         } catch (error) {
             next(error)
         }
     }
 
-    static async deleteCompany(req, res, next) {
+    static async deleteTransaction(req, res, next) {
         try {
-            const response = await Company.delete(req.params.companyId)
+            const response = await Transaction.delete(req.params.transactionId)
         
             if(response.result.n) {
                 res.status(200).json({
-                    messages : 'user success delete'
+                    messages : `transaction ${req.params.transactionId} success delete`
                 })
             } else {
                 next({ name : 'not found'})
             }
-        
         
         } catch (error) {
             next(error)

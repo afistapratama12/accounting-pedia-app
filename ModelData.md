@@ -46,14 +46,20 @@
 ```
 {
     "name" : "",
+    "noBukti" : "",
     "createdAt" : date,
-    "updatedAt : date,
-    "debet" : 0,
-    "kredit" : 0,
-    "transactionDocument" : "link", // dari firebase deploy
     "UserId" : users._id,
+    "documentation" : url from firebase deploy,
     "CompanyId" : companies._id,
-    "AkunId" : akuns._id, 
+    "mutations" : [{
+        "debet" : 0,
+        "kredit" : 0,
+        "AkunId" : akuns._id
+    }, {
+        "debet" : 0,
+        "kredit" : 0,
+        "AkunId" : akuns._id
+    }]
 }
 ```
 **harus pake akun id jangan pake no akun karena nanti terduplikat jika user buat company banyak**
