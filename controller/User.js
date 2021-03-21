@@ -80,7 +80,7 @@ class UserController {
                 response = await User.findByEmail(usermail)
             }
 
-            console.log(response)
+            // console.log(response)
 
             if(!response) {
                 next({ name : 'not register'})
