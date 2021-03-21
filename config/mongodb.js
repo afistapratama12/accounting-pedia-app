@@ -1,5 +1,7 @@
 // require('dotenv').config()
 
+require("dotenv").config()
+
 const { MongoClient } = require('mongodb')
 
 // variabel database bisa diakses di app.js
@@ -10,9 +12,7 @@ let database = null
 
 async function connect() {
     try {
-        // const url = "mongodb://localhost:27017" 
-
-        const url = "mongodb+srv://admin_acc_pedia:admin_acc_pedia@accounting-pedia-server.kmlyf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        const url = process.env.MONGO_URI
 
         const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology : true })
 
