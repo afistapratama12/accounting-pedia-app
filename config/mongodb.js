@@ -10,7 +10,9 @@ let database = null
 
 async function connect() {
     try {
-        const url = "mongodb://localhost:27017" 
+        // const url = "mongodb://localhost:27017" 
+
+        const url = "mongodb+srv://admin_acc_pedia:admin_acc_pedia@accounting-pedia-server.kmlyf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
         const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology : true })
 

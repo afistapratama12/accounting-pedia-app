@@ -46,6 +46,12 @@ class UserController {
         }
 
         try {
+            for(let key in newUser) {
+                if(!newUser[key]) {
+                    next({ name : 'error insert data' })
+                    break
+                }
+            }
             
             const response = await User.create(newUser)
 
