@@ -11,6 +11,6 @@ router.post('/', authenticate,CompanyController.checkManyCompanyUser, CompanyCon
 
 router.patch('/:companyId', authenticate, CompanyController.updateCompany)
 
-router.delete('/:companyId', authenticate, CompanyController.automaticDeleteAkuns, CompanyController.deleteCompany)
+router.delete('/:companyId', authenticate, CompanyController.automaticDeleteTransaction ,CompanyController.automaticDeleteAkuns, CompanyController.deleteCompany)
 
 module.exports = router

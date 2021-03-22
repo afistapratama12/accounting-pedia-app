@@ -103,7 +103,6 @@ class UserController {
                         username : response.username
                     })
                 }
-
             }
             
         } catch (error) {

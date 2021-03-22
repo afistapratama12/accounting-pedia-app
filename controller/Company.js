@@ -1,6 +1,7 @@
 const Company = require('../models/Company')
 const Akun = require('../models/Akun')
 const { pushAccount } = require('../helper/pushAkun')
+const Transaction = require('../models/Transaction')
 
 class CompanyController {
     static async findAll(req, res, next) {
@@ -130,17 +131,38 @@ class CompanyController {
     }
 
 
-    static async automaticDeleteAkuns(req, res, next) {
+    static async automaticDeleteTransaction(req, res, next) {
+        try {
+            const response = await Transaction.automaticDeleteByCompanyId(req.params.companyId)
+
+            if(response.result.n) {
+                next({ transaction : "transaction automatic delete success" })
+            } else {
+                res.status(401).json({ 
+                    messages : "error not found"
+                })
+            }
+
+        } catch (error) {
+            next(error)
+        }
+    }
+
+
+    static async automaticDeleteAkuns(delTransaction, req, res, next) {
         try {
             const response = await Akun.deleteAccountByCompany(req.params.companyId)
 
             if(response.result.n) {
                 next({
                     deleteId : req.params.companyId,
-                    message : "account automatic delete"
+                    transaction : delTransaction.transaction,
+                    account : "account automatic delete"
                 })
             } else {
-                next({ name : 'not found'})
+                res.status(401).json({ 
+                    messages : "error not found"
+                })
             }
         } catch (error) {
             next(error)
@@ -155,7 +177,8 @@ class CompanyController {
             if(response.result.n) {
                 res.status(200).json({
                     company : `Company ${delAccount.deleteId} success delete`,
-                    account : delAccount.message
+                    transaction : delAccount.transaction,
+                    account : delAccount.account
                 })
             } else {
                 next({ name : 'not found' })
