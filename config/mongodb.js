@@ -1,9 +1,3 @@
-require('dotenv').config()
-
-// if(process.env.NODE_ENV == 'development') {
-//     require('dotenv').config()
-// }
-
 const { MongoClient } = require('mongodb')
 
 // variabel database bisa diakses di app.js
