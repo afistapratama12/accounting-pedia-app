@@ -1,8 +1,8 @@
-// require('dotenv').config()
+require('dotenv').config()
 
-if(process.env.NODE_ENV == 'development') {
-    require('dotenv').config()
-}
+// if(process.env.NODE_ENV == 'development') {
+//     require('dotenv').config()
+// }
 
 const { MongoClient } = require('mongodb')
 
@@ -14,7 +14,7 @@ let database = null
 
 async function connect() {
     try {
-        const url = process.env.MONGO_URI || 'mongodb://localhost:27017'
+        const url = process.env.MONGO_URI
 
         const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology : true })
 
