@@ -8,7 +8,7 @@ let database = null
 
 async function connect() {
     try {
-        const url = process.env.MONGO_URI
+        const url = process.env.MONGO_URI || 'mongodb://localhost:27017'
 
         const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology : true })
 

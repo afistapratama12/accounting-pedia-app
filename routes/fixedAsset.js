@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const FixedAssetController = require('../controller/FixedAsset')
+const FixedAssetController = require('../controller/FIxedAsset')
 const { authenticate } = require('../middleware/auth')
 
 router.get('/', FixedAssetController.findAll)
