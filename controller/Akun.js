@@ -21,10 +21,27 @@ class AkunController {
         }
     }
 
-    static async findAllByCompanyUser(req, res, next) {
+
+    static async findAllByCompanyId(req, res, next) {
         try {
             // search akun by company id
-            console.log("masuk sini donk") // masih error donk
+            const response = await Akun.findByCompanyUser(req.params.companyId)
+            // console.log(response)
+            if(response.length == 0) {
+                next({ name : 'not found'})
+            } else {          
+                res.status(200).json(response)
+            }
+
+        } catch (error) {
+            next(error)       
+        }
+    }
+
+    static async findAllByCompanyUserWithTransaction(req, res, next) {
+        try {
+            // search akun by company id
+            // console.log("masuk sini donk") // masih error donk
             const response = await Akun.findByCompanyUser(req.params.companyId)
 
             const getTransaction = await Transaction.findAll(req.params.companyId)

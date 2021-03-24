@@ -6,7 +6,8 @@ const { authenticate } = require('../middleware/auth')
 
 router.get('/', AkunController.findAll)
 
-router.get('/companies/:companyId',authenticate, AkunController.findAllByCompanyUser)
+router.get('/companies/:companyId',authenticate, AkunController.findAllByCompanyId)
+router.get('/companies/:companyId/transactions',authenticate, AkunController.findAllByCompanyUserWithTransaction)
 
 //get all with transaction
 router.get('/:akunId/companies/:companyId', AkunController.findById) 

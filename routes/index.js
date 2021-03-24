@@ -22,5 +22,4 @@ router.use('/fixed_assets', fixedAssetRoute)
 router.use('/inventories', inventoryRoute)
 router.use('/banks', bankRoute)
 
-
 module.exports = router

@@ -106,16 +106,52 @@ class CompanyController {
         }   
     }
 
-    static doneFillSaldoAwal(req, res, next) {
+    static async doneFillSaldoAwal(req, res, next) {
         // change checkFIllSaldoAwal true
+        try {
+
+            let change = {
+                checkFillSaldoAwal : true
+            }
+            const response = await Company.updateData(req.params.companyId , change)
+
+            res.status(200).json({ _id : req.params.companyId, ...response})
+        
+        } catch (error) {
+            next(error)
+        }
     }
 
-    static doneFillFixedAsset(req, res, next) {
+    static async doneFillFixedAsset(req, res, next) {
         // change checkFIllFixedAsset true
+        try {
+            
+            let change = {
+                checkFillFixedAsset : true
+            }
+            const response = await Company.updateData(req.params.companyId , change)
+
+            res.status(200).json({ _id : req.params.companyId, ...response})
+
+        } catch (error) {
+            next(error)
+        }
     }
 
-    static doneFIllContact(req, res, next) {
+    static async doneFIllContact(req, res, next) {
          // change checkFIllContact true
+         try {
+            
+            let change = {
+                checkFillContact : true
+            }
+            const response = await Company.updateData(req.params.companyId , change)
+
+            res.status(200).json({ _id : req.params.companyId, ...response})
+
+        } catch (error) {
+            next(error)
+        }
     }
 
     static async automaticPushAkun(dataCompany, req, res, next) {
@@ -152,7 +188,7 @@ class CompanyController {
 
             const response = await Company.updateData(req.params.companyId , correctData)
 
-            res.status(200).json({ _id : req.params.userId, ...response})
+            res.status(200).json({ _id : req.params.companyId, ...response})
         } catch (error) {
             next(error)
         }
@@ -160,21 +196,21 @@ class CompanyController {
 
 
     // delete bank
-    static autoDeleteBanks(req, res, next) {
+    static async autoDeleteBanks(req, res, next) {
         
     }
     
     // delete fixedAsset
-    static autoDeleteFixedAssets(req, res, next) {
+    static async autoDeleteFixedAssets(req, res, next) {
         
     } 
     // delete Inventories
-    static autoDeleteInventories(req, res, next) {
+    static async autoDeleteInventories(req, res, next) {
         
     }
     
     // delete Contact
-    static autoDeleteContacts(req, res, next) {
+    static async autoDeleteContacts(req, res, next) {
         
     }
 
