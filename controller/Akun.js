@@ -15,13 +15,9 @@ class AkunController {
             // console.log(response)
 
             if(response) {
-                response.map(res => {
-                    return delete res.password
-                })
-                
                 res.status(200).json(response)
             }
-
+            
         } catch (error) {
             next(error)       
         }
