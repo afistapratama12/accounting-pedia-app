@@ -1,5 +1,7 @@
-const Bank = require('../models/Bank')
-const Transaction = require('../models/Transaction')
+const {
+    Bank, 
+    Transaction 
+} = require('../models/index')
 
 class BankController {
     static async findAll(req, res, next) {

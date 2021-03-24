@@ -1,18 +1,17 @@
 const router = require('express').Router()
-// const TransactionController = require('../controller/Transaction')
-// const { authenticate } = require('../middleware/auth')
+const InventoryController = require('../controller/Inventory')
+const { authenticate } = require('../middleware/auth')
 
-// router.get('/', TransactionController.findAll)
+router.get('/', InventoryController.findAll)
 
-// router.get('/companies/:companyId/akuns/:akunId',authenticate, TransactionController.findAllByAkun)
+router.get('/companies/:companyId',authenticate, InventoryController.findAllByCompanyUser)
 
-// router.get('/companies/:companyId',authenticate, TransactionController.findAllByCompanyUser)
-// router.get('/:transactionId', TransactionController.findById)
+router.get('/:inventoryId', InventoryController.findById)
 
-// router.post('/companies/:companyId', authenticate, TransactionController.createTransaction)
+router.post('/companies/:companyId', authenticate, InventoryController.createInventory)
 
-// router.patch('/:transactionId', authenticate, TransactionController.updateTransaction)
+router.patch('/:inventoryId', authenticate, InventoryController.updateInventory)
 
-// router.delete('/:transactionId', authenticate, TransactionController.deleteTransaction)
+router.delete('/:inventoryId', authenticate, InventoryController.deleteInventory)
 
 module.exports = router

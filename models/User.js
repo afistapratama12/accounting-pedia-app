@@ -3,8 +3,7 @@ const { ObjectID } = require('mongodb')
 const { getDatabase } = require('../config/mongodb')
 
 
-
-class User{
+class User {
     
     static dbase() {
         return getDatabase().collection('users')

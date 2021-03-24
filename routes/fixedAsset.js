@@ -1,18 +1,17 @@
 const router = require('express').Router()
-// const TransactionController = require('../controller/Transaction')
-// const { authenticate } = require('../middleware/auth')
+const FixedAssetController = require('../controller/FixedAsset')
+const { authenticate } = require('../middleware/auth')
 
-// router.get('/', TransactionController.findAll)
+router.get('/', FixedAssetController.findAll)
 
-// router.get('/companies/:companyId/akuns/:akunId',authenticate, TransactionController.findAllByAkun)
+router.get('/companies/:companyId',authenticate, FixedAssetController.findAllByCompanyUser)
 
-// router.get('/companies/:companyId',authenticate, TransactionController.findAllByCompanyUser)
-// router.get('/:transactionId', TransactionController.findById)
+router.get('/:fixedAssetId', FixedAssetController.findById)
 
-// router.post('/companies/:companyId', authenticate, TransactionController.createTransaction)
+router.post('/companies/:companyId', authenticate, FixedAssetController.createFixedAsset)
 
-// router.patch('/:transactionId', authenticate, TransactionController.updateTransaction)
+router.patch('/:fixedAssetId', authenticate, FixedAssetController.updateFA)
 
-// router.delete('/:transactionId', authenticate, TransactionController.deleteTransaction)
+router.delete('/:fixedAssetId', authenticate, FixedAssetController.deleteFA)
 
 module.exports = router

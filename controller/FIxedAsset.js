@@ -1,4 +1,4 @@
-const FixedAsset = require('../models/FixedAsset')
+const { FixedAsset } = require('../models/index')
 
 class FixedAssetController {
     static async findAll(req, res, next) {

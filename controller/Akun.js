@@ -1,4 +1,4 @@
-const Akun = require('../models/Akun')
+const { Akun } = require('../models/index')
 
 const { 
     allTransactionAkun, 

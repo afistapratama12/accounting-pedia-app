@@ -13,19 +13,7 @@ class Contact{
         return this.dbase().find().toArray()
     }
 
-    static findAllSuppliers() {
-        return this.dbase().find({ type : "supplier"}).toArray()
-    }
-
-    static findAllCustomers() {
-        return this.dbase().find({ type : "customer"}).toArray()
-    }
-
-    static findAllEmployees() {
-        return this.dbase().find({ type : "karyawan"}).toArray()
-    }
-
-    static findAllByCompany(id) {
+    static findByCompanyId(id) {
         return this.dbase().find({ 
             CompanyId : id,
             COmpanyId : ObjectID(id)

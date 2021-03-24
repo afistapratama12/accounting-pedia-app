@@ -1,4 +1,4 @@
-const Contact = require('../models/Contact')
+const { Contact } = require('../models/index')
 
 class ContactController {
     static async findAll(req, res, next) {
@@ -27,7 +27,6 @@ class ContactController {
             } else {
                 
                 // const result = showAllAkunWithTransaction(response, getTransaction)                
-
                 res.status(200).json(response)
             }
 
@@ -35,7 +34,6 @@ class ContactController {
             next(error)       
         }
     }
-
 
     static async findById(req, res, next) {
         try {

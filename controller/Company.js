@@ -1,7 +1,15 @@
-const Company = require('../models/Company')
-const Akun = require('../models/Akun')
+const { 
+    Company, 
+    Akun, 
+    Transaction, 
+    Bank, 
+    FixedAsset,
+    Contact,
+    Inventory
+} = require('../models/index')
+
 const { pushAccount } = require('../helper/pushAkun')
-const Transaction = require('../models/Transaction')
+
 
 class CompanyController {
     static async findAll(req, res, next) {
@@ -61,7 +69,6 @@ class CompanyController {
             name : req.body.name,
             address : req.body.address,
             logo: req.body.logo,
-            address : req.body.address,
             fax : req.body.fax,
             npwp : req.body.npwp,
             website : req.body.website,
@@ -130,7 +137,7 @@ class CompanyController {
 
 
     static async updateCompany(req, res, next) {
-        let correctData = {} //  belum dibuat
+        let correctData = {} 
 
         for(const key in req.body) {
             if (key == 'name' || key == 'address' || key ==  'noTelp') {

@@ -1,3 +1,9 @@
+# microservice
+- data sciente analisis financial
+- micro feature
+- out of product accounting
+
+
 # User 
 ```
 {
@@ -16,13 +22,17 @@
 {
     "name" : "",
     "address" : "",
+    fax : req.body.fax,
+    npwp : req.body.npwp,
+    website : req.body.website,
+    email : req.body.email,
     "periodeAwal" : date,
     "periodeAkhir" : date,
     "jenisUsaha" : "",
+    "noTelp" : "",
     "checkFillSaldoAwal" : true / false,
     "checkFillContact" : true/ false,
     "checkFillFixedAsset" : true/ false,
-    "noTelp" : "",
     "UserId" : users._id
 }
 ```

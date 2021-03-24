@@ -3,7 +3,6 @@ const { ObjectID } = require('mongodb')
 const { getDatabase } = require('../config/mongodb')
 
 
-
 class Transaction{
     
     static dbase() {

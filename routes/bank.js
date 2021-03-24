@@ -1,18 +1,17 @@
 const router = require('express').Router()
-// const TransactionController = require('../controller/Transaction')
-// const { authenticate } = require('../middleware/auth')
+const BankController = require('../controller/Bank')
+const { authenticate } = require('../middleware/auth')
 
-// router.get('/', TransactionController.findAll)
+router.get('/', BankController.findAll)
 
-// router.get('/companies/:companyId/akuns/:akunId',authenticate, TransactionController.findAllByAkun)
+router.get('/companies/:companyId',authenticate, BankController.findAllByCompanyUser)
 
-// router.get('/companies/:companyId',authenticate, TransactionController.findAllByCompanyUser)
-// router.get('/:transactionId', TransactionController.findById)
+router.get('/:bankId', BankController.findById)
 
-// router.post('/companies/:companyId', authenticate, TransactionController.createTransaction)
+router.post('/companies/:companyId', authenticate, BankController.createBank)
 
-// router.patch('/:transactionId', authenticate, TransactionController.updateTransaction)
+router.patch('/:bankId', authenticate, BankController.updateBank)
 
-// router.delete('/:transactionId', authenticate, TransactionController.deleteTransaction)
+router.delete('/:bankId', authenticate, BankController.deleteBank)
 
 module.exports = router
