@@ -60,10 +60,19 @@ class CompanyController {
         const newCompany = {
             name : req.body.name,
             address : req.body.address,
+            logo: req.body.logo,
+            address : req.body.address,
+            fax : req.body.fax,
+            npwp : req.body.npwp,
+            website : req.body.website,
+            email : req.body.email,
             periodeAwal : req.body.periodeAwal,
             periodeAkhir : req.body.periodeAkhir,
             jenisUsaha : req.body.jenisUsaha,
             noTelp : +req.body.noTelp,
+            checkFillSaldoAwal : false,
+            checkFillContact :false,
+            checkFillFixedAsset : false,
             UserId : req.userId
         }
 
@@ -90,6 +99,18 @@ class CompanyController {
         }   
     }
 
+    static doneFillSaldoAwal(req, res, next) {
+        // change checkFIllSaldoAwal true
+    }
+
+    static doneFillFixedAsset(req, res, next) {
+        // change checkFIllFixedAsset true
+    }
+
+    static doneFIllContact(req, res, next) {
+         // change checkFIllContact true
+    }
+
     static async automaticPushAkun(dataCompany, req, res, next) {
         try {
             let getAllDataAccount = pushAccount(dataCompany.UserId, dataCompany._id)
@@ -109,7 +130,7 @@ class CompanyController {
 
 
     static async updateCompany(req, res, next) {
-        let correctData = {}
+        let correctData = {} //  belum dibuat
 
         for(const key in req.body) {
             if (key == 'name' || key == 'address' || key ==  'noTelp') {
@@ -131,11 +152,31 @@ class CompanyController {
     }
 
 
+    // delete bank
+    static autoDeleteBanks(req, res, next) {
+        
+    }
+    
+    // delete fixedAsset
+    static autoDeleteFixedAssets(req, res, next) {
+        
+    } 
+    // delete Inventories
+    static autoDeleteInventories(req, res, next) {
+        
+    }
+    
+    // delete Contact
+    static autoDeleteContacts(req, res, next) {
+        
+    }
+
+
     static async automaticDeleteTransaction(req, res, next) {
         try {
             const response = await Transaction.automaticDeleteByCompanyId(req.params.companyId)
 
-            if(response.result.n) {
+            if(response.result.ok) {
                 next({ transaction : "transaction automatic delete success" })
             } else {
                 res.status(401).json({ 
@@ -147,19 +188,19 @@ class CompanyController {
             next(error)
         }
     }
-
-
+    
     static async automaticDeleteAkuns(delTransaction, req, res, next) {
         try {
             const response = await Akun.deleteAccountByCompany(req.params.companyId)
 
-            if(response.result.n) {
+            if(response.result.ok) {
                 next({
                     deleteId : req.params.companyId,
                     transaction : delTransaction.transaction,
                     account : "account automatic delete"
                 })
             } else {
+                console.log("masuk sini, line 201")
                 res.status(401).json({ 
                     messages : "error not found"
                 })
@@ -181,6 +222,7 @@ class CompanyController {
                     account : delAccount.account
                 })
             } else {
+                console.log("masuk sini, line 223")
                 next({ name : 'not found' })
             }
         

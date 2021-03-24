@@ -8,6 +8,7 @@ function allTransactionAkun(akunName, transaction) {
                     TransactionId : transaction[i]._id,
                     name :  transaction[i].name,
                     noBukti : transaction[i].noBukti,
+                    date : transaction[i].createdAt,
                     debet : transaction[i].mutations[j].debet,
                     kredit : transaction[i].mutations[j].kredit
                 })
@@ -20,9 +21,6 @@ function allTransactionAkun(akunName, transaction) {
     } else {
         akunName.saldo += akunName.kredit
     }
-
-    delete akunName.debet
-    delete akunName.kredit
 
     for(let k = 0 ; k < trans.length; k++) {
         if(akunName.position == "D") {
@@ -41,5 +39,18 @@ function allTransactionAkun(akunName, transaction) {
     return akunName
 }
 
-module.exports = allTransactionAkun
+
+function showAllAkunWithTransaction(allAkun, transaction) {
+    allAkun.map(akunName => {
+
+        return allTransactionAkun(akunName, transaction)
+    })
+
+    return allAkun
+}
+
+module.exports = {
+    allTransactionAkun,
+    showAllAkunWithTransaction
+}
 

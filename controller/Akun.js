@@ -1,5 +1,10 @@
 const Akun = require('../models/Akun')
-const allTransactionAkun = require('../helper/allTransactionByAkun')
+
+const { 
+    allTransactionAkun, 
+    showAllAkunWithTransaction 
+} = require('../helper/allTransactionByAkun')
+
 const Transaction = require('../models/Transaction')
 
 class AkunController {
@@ -22,16 +27,23 @@ class AkunController {
             console.log("masuk sini donk") // masih error donk
             const response = await Akun.findByCompanyUser(req.params.companyId)
 
+            const getTransaction = await Transaction.findAll(req.params.companyId)
+
             // console.log(response)
             if(response.length == 0) {
                 next({ name : 'not found'})
+            } else {
+                
+                const result = showAllAkunWithTransaction(response, getTransaction)                
+
+                res.status(200).json(result)
             }
-            res.status(200).json(response)
 
         } catch (error) {
             next(error)       
         }
     }
+
 
     static async findById(req, res, next) {
         try {
@@ -40,9 +52,6 @@ class AkunController {
             const getTransaction = await Transaction.findAll(req.params.companyId)
 
             if(getAkun) {
-                
-                console.log(getAkun, "get akun")
-                console.log(getTransaction, "get Transaction")
 
                 let getAllTrans = allTransactionAkun(getAkun, getTransaction)
                 res.status(200).json(getAllTrans)

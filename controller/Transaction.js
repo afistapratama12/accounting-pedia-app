@@ -1,6 +1,5 @@
 const Transaction = require('../models/Transaction')
 
-
 // diperbaiki dulu
 class TransactionController{
     static async findAll(req, res, next) {
@@ -72,6 +71,10 @@ class TransactionController{
                 documantation : req.body.documentation,
                 UserId : req.userId,
                 CompanyId : req.params.companyId,
+                ContactId : req.body.contactId,
+                InventoryId : req.body.inventoryId,
+                FixedAssetId : req.body.fixedAssetId,
+                BankId : req.body.bankId,
                 mutations : req.body.mutations
             }
 

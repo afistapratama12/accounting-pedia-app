@@ -28,6 +28,7 @@ app.use(express.urlencoded({extended : true}))
 // let database = null
 
 app.use('/', router)
+
 app.use(errorHandler)
 
 connect().then(() => {

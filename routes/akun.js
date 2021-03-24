@@ -7,7 +7,9 @@ const { authenticate } = require('../middleware/auth')
 router.get('/', AkunController.findAll)
 
 router.get('/companies/:companyId',authenticate, AkunController.findAllByCompanyUser)
-router.get('/:akunId/companies/:companyId', AkunController.findById)
+
+//get all with transaction
+router.get('/:akunId/companies/:companyId', AkunController.findById) 
 
 router.post('/companies/:companyId', authenticate, AkunController.createAkun)
 

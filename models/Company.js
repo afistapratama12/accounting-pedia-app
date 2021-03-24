@@ -35,7 +35,9 @@ class Company{
     }
 
     static delete(id) {
-        return this.dbase().deleteOne({ _id : ObjectID(id)})
+        return this.dbase().deleteOne({ 
+            _id : ObjectID(id)
+        })
     }
 
 }

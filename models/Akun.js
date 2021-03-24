@@ -6,7 +6,7 @@ const { getDatabase } = require('../config/mongodb')
 class Akun{
     
     static dbase() {
-        return getDatabase().collection('akuns')
+        return getDatabase().collection("akuns")
     }
 
     static findAll() {
@@ -15,7 +15,6 @@ class Akun{
 
     static findByCompanyUser(id) {
         return this.dbase().find({
-            CompanyId : id,
             CompanyId : ObjectID(id)
         }).toArray()
     }
@@ -50,13 +49,12 @@ class Akun{
 
     static deleteAccountByCompany(id) {
         return this.dbase().deleteMany({ 
-            CompanyId : ObjectID(id), 
-            CompanyId : id
+            CompanyId : ObjectID(id)
         })
     }
 
     static manualDelete(val) {
-        return this.dbase().deleteMany({ Head : val})
+        return this.dbase().deleteMany({ Head : val })
     }
 }
 
